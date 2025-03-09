@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';  
-import PostInteractions from '../../components/PostInteractions/PostInteractions';
 import Image from '../../components/Image';
 import Comments from '../../components/coments/comments';
 import "../postPage/postPage.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import PostInteractions from '../../components/postInteractions/PostInteractions';
 
 const PostPage = () => {
   const location = useLocation();
@@ -35,7 +35,7 @@ const PostPage = () => {
           <div className="post-user">
             <Link to="/john" className="user-info">
               <Image path="/general/noAvatar.png" className="user-avatar" />
-              <span className="user-name">John Doe</span>
+              <span className="user-name">Jake Mayores</span>
             </Link>
           </div>
 

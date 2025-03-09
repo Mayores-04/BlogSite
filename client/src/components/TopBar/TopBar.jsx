@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import UserButton from './UserButton';
+import UserButton from '../UserButton/UserButton';
+import './TopBar.css'
 
 const TopBar = () => {
     return (

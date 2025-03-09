@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './UserButton.css'
 
 const UserButton = () => {
     // Temp - Replace with actual authentication logic
@@ -12,9 +13,11 @@ const UserButton = () => {
             <img onClick={() => setOpen((prev) => !prev)} src="/general/arrow.svg" alt="Dropdown Icon" className="w-4 h-4 mr-2" />
             {open && (
                 <div className="userOptions  absolute top-15.5 z-1000 right-1 items-center bg-white shadow-lg border-[#414141] rounded-lg overflow-hidden border">
-                    <div className="userOptions hover:bg-gray-100 px-4 py-2 text-black cursor-pointer">Profile</div>
-                    <div className="userOptions hover:bg-gray-100 px-4 py-2 text-black cursor-pointer">Settings</div>
-                    <div className="userOptions hover:bg-red-500 px-4 py-2 text-black cursor-pointer">Logout</div>
+                    <div className="userOptions hover:bg-gray-100 px-4 py-2 text-black cursor-pointer"><a href={`/userProfile`}>Profile</a></div>
+                    <div className="userOptions hover:bg-gray-100 px-4 py-2 text-black cursor-pointer"><a href={``}>Settings</a></div>
+                    <div className="userOptions hover:bg-red-500 px-4 py-2 text-black cursor-pointer"><button onClick={() => {
+                        alert("Logout")
+                    }}>Logout</button></div>
                 </div>
             )}
         </div>

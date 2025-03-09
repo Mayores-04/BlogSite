@@ -1,7 +1,7 @@
 import React from 'react'
 import './app.css'
-import LeftBar from '../../components/leftBar';
-import TopBar from '../../components/topBar';
+import LeftBar from '../../components/LeftBar/LeftBar';
+import TopBar from '../../components/TopBar/TopBar';
 import { Outlet } from 'react-router';
 
 const mainLayout = () => {
