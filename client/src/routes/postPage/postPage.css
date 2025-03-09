@@ -1,0 +1,95 @@
+/* Centering the entire layout */
+.post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  /* Main card layout */
+  .post-card {
+    display: flex;
+    width: 900px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Left: Image */
+  .post-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .post-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Right: Details */
+  .post-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* User Info */
+  .post-user {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Comments Section */
+  .post-comments {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 300px;
+    padding-top: 10px;
+  }
+  
+  /* Make it responsive */
+  @media (max-width: 768px) {
+    .post-card {
+      flex-direction: column;
+      width: 100%;
+      max-width: 500px;
+    }
+  
+    .post-image, .post-details {
+      width: 100%;
+    }
+  
+    .post-image img {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,27 @@
+.logo {
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+}
+
+.search {
+  margin-left: 10px;
+}
+
+.searchIcon {
+  padding: 10px;
+}
+
+.user {
+  margin-right: 10px;
+  padding: 7px;
+}
+
+.userOptions {
+  padding: 5px;
+}
+
