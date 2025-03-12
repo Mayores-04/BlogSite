@@ -12,7 +12,7 @@ const Image = ({ path, alt, className, w, h }) => {
           height: h,
         },
       ]}
-      alt="Test"
+      alt={alt}
       loading="lazy"
       className={className}
       lqip={{ active: true, quality: 20 }}
